@@ -1,0 +1,13 @@
+version: "3.9"
+services:
+  postgres:
+    container_name: postgres
+    image: postgres:13.3
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_PASSWORD: 1568996
+      POSTGRES_USER: postgres
+      POSTGRES_DB: test_hiber_db
+volumes:
+  storage-dev:
